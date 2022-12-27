@@ -11,18 +11,18 @@
 <body>
     <h1>Hello world!!</h1>
     <input type="button" id="darkButton" style='font-size:100px;'value="&#128526;">
-    <!-- <input type="button" id="whiteButton"  style='font-size:100px;' value="&#129321;"> -->
+    <input type="button" id="whiteButton"  style='font-size:100px;' value="&#129321;">
     
 
     <script>
         //check storage if dark mode was on or off
         if (sessionStorage.getItem("mode") == "dark") {
-            document.getElementById("darkButton").value = "&#128526;"
+            // document.getElementById("darkButton").value = "&#128526;"
             
 
             darkmode(); //if dark mode was on, run this funtion
         } else {
-            document.getElementById("darkButton").value = "&#129321;"
+            // document.getElementById("darkButton").value = "&#129321;"
             nodark(); //else run this funtion
         }
 
@@ -31,16 +31,16 @@
 
         function darkmode(){
             document.body.classList.add("dark-mode");
-            // document.getElementById("darkButton").style.display = 'none';
-            // document.getElementById("whiteButton").style.display = 'block';
+            document.getElementById("darkButton").style.display = 'none';
+            document.getElementById("whiteButton").style.display = 'block';
             sessionStorage.setItem("mode", "dark");
         }
 
         function nodark(){
             document.body.classList.remove("dark-mode");
             sessionStorage.removeItem("mode");
-            // document.getElementById("whiteButton").style.display = 'none';
-            // document.getElementById("darkButton").style.display = 'block';
+            document.getElementById("whiteButton").style.display = 'none';
+            document.getElementById("darkButton").style.display = 'block';
         }
     </script>
 </body>
