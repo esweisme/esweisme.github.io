@@ -3,7 +3,17 @@ body {
     color: rgb(88, 92, 92);
 }
 
+ a:link { color: rgb(122, 138, 93); font-weight:bold; }
+ a:visited { color: #257028; }
+ a:hover { color: #36bfd1; }
+ a:active { color: #ff4040; text-decoration:none; font-weight:bold; }
+
 .dark-mode {
     background-color: rgb(51, 48, 48);
     color: rgb(243, 224, 224);
   }
+
+  .dark-mode a:link { color: lightskyblue; font-weight:bold; }
+  .dark-mode a:visited { color: #e4d8f0; }
+  .dark-mode a:hover { color: #ffffff; }
+  .dark-mode a:active { color: #ff4040; text-decoration:none; font-weight:bold; }
