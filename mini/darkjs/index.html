@@ -15,7 +15,7 @@
         <li><a href="##">dua</a></li>
         <li><a href="###">tiga belas</a></li>
     </ul>
-    <a id="tombol" style="cursor: pointer;"></a>
+    <a id="tombol"></a>
     
 
     <script>
@@ -24,6 +24,7 @@
         var body = document.body;
         tombol.style.fontSize = "30px";
         tombol.innerHTML = "&#128526;";
+        tombol.style.cursor = "pointer";
         
         if (sessionStorage.getItem("mode") === null ){
             brightmode();
